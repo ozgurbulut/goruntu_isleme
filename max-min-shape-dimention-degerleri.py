@@ -9,8 +9,8 @@ def my_function_1(img_1):
 
     en_fazla = (img_1[:,:,0].max())
     en_az = (img_1[:,:,0].min())
-    dimention = (img_1.ndim)
-    shape=(img_1.shape)
+    dimention = (img_1.ndim)///eksen_sayisi
+    shape=(img_1.shape)///eksen_degerleri
     print("Dimention degeri =",dimention)
     print("Shape degeri = ",shape)
     print("En buyuk deger =",en_fazla)
