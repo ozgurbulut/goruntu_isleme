@@ -1,0 +1,14 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import numpy as np
+image_1=plt.imread("image.jpg")
+def my_h(image_1):
+    h1={}
+    for i in range(image_1.shape[0]):
+        for j in range(image_1.shape[1]):
+            if(image_1[i,j,0]) in h1.keys():
+                h1[image_1[i,j,0]] = h1[image_1[i,j,0]] + 1
+            else:
+                h1[image_1[i,j,0]] = 1
+    return h1
+my_h(image_1)
