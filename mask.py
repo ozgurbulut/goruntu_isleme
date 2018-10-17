@@ -24,12 +24,12 @@ def convert_rgb_to_gray_level(im_1):
     return im_2
 im_2=convert_rgb_to_gray_level(img)
 type(im_2)
-plt.imshow(im_2,cmap="gray")
-plt.show()
+#plt.imshow(im_2,cmap="gray")
+#plt.show()
 
 
-plt.subplot(1,3,1),plt.imshow(img)
-plt.subplot(1,3,2),plt.imshow(im_2,cmap="gray")
+#plt.subplot(1,3,1),plt.imshow(img)
+#plt.subplot(1,3,2),plt.imshow(im_2,cmap="gray")
 
 def get_default_mask_for_mean():
     #ortalamayı bulduracak
@@ -52,5 +52,5 @@ def get_mean_filter(img1):
 
 
 img3= get_mean_filter(im_2)
-plt.imshow(im_2)
-plt.imshow(img3,cmap="gray")
+plt.subplot(1,3,1),plt.imshow(im_2,cmap="gray")
+plt.subplot(1,3,2),plt.imshow(img3,cmap="gray")
